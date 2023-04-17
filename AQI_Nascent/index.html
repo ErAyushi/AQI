@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI Predictor</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./library/ol.css">
+    <link rel="stylesheet" href="./library/app.css">
+ </head>
+
+<body>
+    <!-- DIV FOR Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="normal-air-quality-index.jpg" alt="AQI">
+        </div>
+        <div>
+            <h4>A Comparative Study of various Machine Learning algorithm for Predication of Air Quality Index(AQI) of
+                Indian Cities</h4>
+        </div>
+        <div class='dropDownDiv'>
+            <div class="card-body">
+                <span>
+                    <span>
+                        <label style="margin-left: 155px;"><b>Year</b> </label>
+                        <Select id="year" name="year">
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </Select>
+                    </span>
+                    <span>
+                        <label style="margin-left: 0px;"> <b>Month</b> </label>
+                        <Select id="month" name="month">
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option> 
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </Select>
+
+                    </span>
+                    </form>
+                    <br>
+
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- DIV for Map -->
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+      </div>
+    
+    <div id="map"></div>
+    <!-- <script src="./library/config.js"></script> -->
+    <script src="./library/ol.js"></script>
+    <script src="library/app.js"></script>
+</body>
+
+</html>
